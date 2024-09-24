@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Kay_Weather_App.WelcomePage"
+             Title="WelcomePage"
+             BackgroundColor="#515151">
+
+    <StackLayout VerticalOptions="Center" 
+                 Margin="20"
+                 Spacing="0">
+        <Image Source="kay_logo_yellow"
+              HeightRequest="200"
+              WidthRequest="200" />
+        <Label Text="Kay's"
+               FontSize="40"
+               TextColor="#ffca28" />
+        <Label Text=".NET MAUI App."
+               FontSize="40"
+               TextColor="White" />
+        <Label Text="Welcome to Kay's first .NET MAUI App. It's the newest weather app with a bunch of features."
+               TextColor="White"
+               FontSize="Small" />
+        <Button Text="Get Started"
+                FontSize="Large"
+                TextColor="black"
+                BackgroundColor="#ffca28"
+                WidthRequest="250"
+                Margin="0,50,0,0"
+                x:Name="BtnGetStarted" 
+                Clicked="BtnGetStarted_Clicked"/>
+
+    </StackLayout>
+</ContentPage>
